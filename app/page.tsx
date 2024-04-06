@@ -14,7 +14,7 @@ export default function Home() {
 
       <Craft.Section>
         <Craft.Container className="space-y-2">
-          <SecondaryHero title="Neler yapıyoruz? " subtitle="Sektörlerimiz">
+          <SecondaryHero title="Neler yapıyoruz? ">
             {
               //    All pages from. These are all the pages from your WordPress.
             }
