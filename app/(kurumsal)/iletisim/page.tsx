@@ -15,35 +15,42 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <Craft.Main>
-      <SecondaryHero title="İletişim" className="border-b">
-        <div className="">
-          <p>
-            <Balancer className="font-semibold">{nimi.company_name}</Balancer>
-          </p>
-          <p>
-            <Balancer>{nimi.company_address}</Balancer>
-          </p>
-          <p>
-            <Balancer>
-              {nimi.company_province + " / " + nimi.company_district}
-            </Balancer>
-          </p>
-        </div>
-      </SecondaryHero>
+    <div>
+      <SecondaryHero title="İletişim" className=""></SecondaryHero>
       <Craft.Section>
-        <Craft.Container>
-          {
-            // <ContatctForm />
-            " "
-          }
-          <div className="flex gap-4">
-            <Phone className="h-6 w-6" /> +09 252 424 0696
-            <Mail className="h-6 w-6" /> info@nimi.com.tr
+        <Craft.Container className="grid gap-6 md:grid-cols-1">
+          Aşağıdaki iletişim bilgilerimizden bize ulaşabilirsiniz.
+          <div className="grid gap-1">
+            <p>
+              <Balancer className=" font-semibold ">
+                {nimi.company_name}
+              </Balancer>
+            </p>
+            <p>
+              <Balancer>{nimi.company_address}</Balancer>
+            </p>
+            <p>
+              <Balancer>
+                {nimi.company_province + " / " + nimi.company_district}
+              </Balancer>
+            </p>
+
+            <p className="flex items-center gap-2 text-slate-700 font-medium mt-3">
+              <Phone className="h-4 w-4" />
+              +09 252 424 0696
+            </p>
+
+            <p className="flex items-center gap-2 text-slate-700 font-medium mt-3">
+              <Mail className="h-4 w-4" /> info@nimi.com.tr
+            </p>
           </div>
+
+          {
+            //<ContatctForm />
+          }
         </Craft.Container>
       </Craft.Section>
-    </Craft.Main>
+    </div>
   );
 };
 

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
-import { Badge } from "../ui/badge";
 import * as Craft from "@/components/craft/layout";
 
 import nimi from "@/nimi.config";
