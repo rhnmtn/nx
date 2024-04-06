@@ -17,14 +17,13 @@ const Hero = () => {
           </h2>
           <div className="my-8 h-96 w-full overflow-hidden rounded-lg md:rounded-xl">
             <Image
-              rel="preload"
-              className="h-full w-full object-cover object-bottom"
               src={Placeholder}
-              priority={true}
+              alt={nimi.company_name}
               width={1080}
               height={384}
-              alt= {nimi.company_name}
-              placeholder="blur"
+              priority={true}
+              className="h-full w-full object-cover object-bottom"
+              loading="eager"
             />
           </div>
         </div>
