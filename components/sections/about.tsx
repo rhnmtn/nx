@@ -19,7 +19,7 @@ const About = () => {
             />
           </div>
           <h1 className="text-3xl"> {nimi.site_name} </h1>
-          <h2 className="text-xl">
+          <h2 className=" text-xl">
             Nimi Group, 2021 yılında kurulmuş bir şirkettir ve merkezi
             Muğla/Fethiye'dedir. Birden fazla sektörde güçlü rekabet
             avantajlarına sahip olarak lider pozisyonlarda bulunmaktayız.
