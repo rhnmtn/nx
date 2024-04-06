@@ -31,7 +31,8 @@ const About = () => {
             benimseyen ve dünyaya pozitif etki yapmayı amaçlayan sorumlu bir
             firma olarak, amacımız uzun vadeli çözümler üreterek bulunduğumuz
             bölgede daha iyi bir gelecek için liderlik yapmak ve bu anlayışla
-            mevcut yatırımlarımızı dönüştürmektir. 
+            mevcut yatırımlarımızı dönüştürmektir.
+            
           </p>
           <p className=" md:w-4/5 mt-2 md:mt-12">
           Dün ve bugün olduğu gibi, gelecekte
