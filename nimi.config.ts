@@ -31,9 +31,9 @@ const nimi: NimiProps = {
 
   menu: {
     main: {
-      home: "/", // Don't Change
-      about: "/about", // you can remove this if you don't want an about page
-      contact: "/contact", // you can remove this if you don't want a contact page
+      "Ana Sayfa": "/", // Don't Change
+      "Hakkımızda": "/hakkimizda", // you can remove this if you don't want an about page
+      "İletişim": "/iletisim", // you can remove this if you don't want a contact page
     },
     content: {
       authors: "/posts/authors", // default is `/posts/authors`

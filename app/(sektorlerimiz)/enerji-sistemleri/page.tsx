@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <Craft.Section>
       <Craft.Container className="space-y-2">
-        <span className="font-bold">Proje İnşaat </span> sayfamız yakında burada
+        <span className="font-bold">Enerji Sistemleri </span> sayfamız yakında burada
         olacak.
       </Craft.Container>
     </Craft.Section>

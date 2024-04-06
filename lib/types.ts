@@ -34,9 +34,9 @@
 
   menu: {
     main: {
-      home: string;
-      about?: string;
-      contact?: string;
+      "Ana Sayfa": string;
+      "Hakkımızda"?: string;
+      "İletişim"?: string;
     };
 
     content: {
@@ -91,4 +91,10 @@ type NavProps = {
   className?: string;
   children?: React.ReactNode;
   id?: string;
+};
+
+type faqProps = {
+  question: string;
+  answer: string;
+  link?: string;
 };

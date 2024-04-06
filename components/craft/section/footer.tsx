@@ -19,14 +19,16 @@ import Social from "@/components/social/";
 const Footer = () => {
   return (
     <footer className="border-t drop-shadow-sm bg-secondary ">
-
-<Craft.Section>
+      <Craft.Section>
         <Craft.Container className="grid gap-6 md:grid-cols-2">
           <div className="grid gap-1">
             <Link href="/">
-            <h1 className="text-primary-500  text-2xl md:text-4xl">
-		   <span className="font-extrabold ">nimi </span><span className=" font-extralight text-orange-600 "> group </span> 
-		  </h1>
+              <h1 className="text-primary-500  text-2xl md:text-4xl">
+                <span className="font-extrabold ">nimi </span>
+                <span className=" font-extralight text-orange-600 ">
+                  group
+                </span>
+              </h1>
             </Link>
             <p>
               <Balancer className=" font-semibold ">
@@ -85,7 +87,6 @@ const Footer = () => {
 };
 
 export default Footer;
-
 
 /*
 

@@ -82,7 +82,7 @@ type ContainerProps = {
 
 const Container = ({ children, className, id }: ContainerProps) => {
   return (
-    <div className={cn("max-w-5xl mx-auto", "p-6 sm:p-8", className)} id={id}>
+    <div className={cn("max-w-5xl mx-auto", "p-4 sm:p-6", className)} id={id}>
       {children}
     </div>
   );
