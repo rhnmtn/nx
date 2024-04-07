@@ -7,8 +7,13 @@ import SecondaryHero from "@/components/sections/secondary-hero";
 import { Contact } from "@/components/sections/contact";
 
 export const metadata: Metadata = {
-  title: `İletişim  | ${nimi.site_name}`,
+  title: {
+    template: nimi.site_title,
+    default: `%s | ${nimi.site_name}`,
+    absolute: `İletişim | ${nimi.site_name}`,
+  },
   description: `İletişim, ${nimi.site_name}. ${nimi.site_description}`,
+  
 };
 
 const Page = () => {

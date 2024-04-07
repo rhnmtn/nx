@@ -1,5 +1,3 @@
-// Fjord Config
-import nimi from "@/nimi.config";
 
 // Next Imports
 import Link from "next/link";
@@ -41,11 +39,10 @@ const Nav = ({ className, children, id }: NavProps) => {
         <div className="flex items-center gap-2">
           <NavMenu />
           {/**
- <Button asChild>
-<Link href={nimi.menu.cta}>Get Started</Link>
-</Button>
-             **/}
-
+           <Button asChild>
+          <Link href={nimi.menu.cta}>Get Started</Link>
+          </Button>
+          **/}
           <ModeToggle />
           <MobileNav />
         </div>

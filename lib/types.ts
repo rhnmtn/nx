@@ -38,21 +38,7 @@
       "Hakkımızda"?: string;
       "İletişim"?: string;
     };
-
-    content: {
-      authors: string;
-      categories?: string;
-      tags?: string;
-      pages: string;
-    };
-
-    legal: {
-      privacy_policy?: string;
-      privacy_policy_text?: string;
-      terms_of_service?: string;
-      terms_of_service_text?: string;
-    };
-    cta: string;
+    cta?: string;
   };
 
   nav_menu: {
@@ -64,7 +50,7 @@
     }[];
   };
 
-  directory_menu: {
+  legal_menu: {
     title: string;
     items: {
       title: string;

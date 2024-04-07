@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  manifest: `${nimi.site_domain}/manifest.json`, // Must be an absolute URL
+  //manifest: `${nimi.site_domain}/manifest.json`, // Must be an absolute URL
   twitter: {
     card: "summary_large_image",
     title: nimi.site_title,
@@ -65,8 +65,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/icon.png" },
-      new URL("/icon.png", "https://example.com"),
+      { url: "/favicon.ico" },
+      new URL("/favicon.ico", "https://nimi.com.tr"),
       { url: "/icon-dark.png", media: "(prefers-color-scheme: dark)" },
     ],
     shortcut: ["/shortcut-icon.png"],

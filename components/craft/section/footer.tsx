@@ -1,10 +1,8 @@
-// Fjord Config
+// nimi Config
 import nimi from "@/nimi.config";
 
 // Component Imports
 import * as Craft from "@/components/craft/layout";
-import { ModeToggle } from "../theme/theme-toggle";
-import { Button } from "@/components/ui/button";
 
 // React and Next Imports
 import Image from "next/image";
@@ -25,9 +23,7 @@ const Footer = () => {
             <Link href="/">
               <h1 className="text-primary-500  text-2xl md:text-4xl">
                 <span className="font-extrabold ">nimi </span>
-                <span className=" font-extralight text-orange-600 ">
-                  tech
-                </span>
+                <span className=" font-extralight text-orange-600 ">tech</span>
               </h1>
             </Link>
             <p>
@@ -49,10 +45,8 @@ const Footer = () => {
             </div>
           </div>
 
-
           <div className="grid md:grid-cols-3 gap-6 sm:gap-0">
-
-          <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
               <h4 className="text-muted-foreground">{nimi.site_name}</h4>
               <ul>
                 {Object.entries(nimi.menu.main).map(([key, href]) => (
@@ -66,26 +60,24 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <h4 className="text-muted-foreground">{nimi.sectory_menu.title}</h4>
+              <h4 className="text-muted-foreground">
+                {nimi.sectory_menu.title}
+              </h4>
               <ul>
-              {nimi.sectory_menu.items.map((component) => (
+                {nimi.sectory_menu.items.map((component) => (
                   <li key={component.id}>
-                    <Link href={component.href}>
-                    {component.title}
-                    </Link>
+                    <Link href={component.href}>{component.title}</Link>
                   </li>
                 ))}
               </ul>
             </div>
 
             <div className="flex flex-col gap-2">
-              <h4 className="text-muted-foreground">Blog</h4>
+              <h4 className="text-muted-foreground">{nimi.legal_menu.title}</h4>
               <ul>
-                {Object.entries(nimi.menu.legal).map(([key, href]) => (
-                  <li key={key}>
-                    <Link href={href}>
-                      {key.charAt(0).toUpperCase() + key.slice(1)}
-                    </Link>
+                {nimi.legal_menu.items.map((component) => (
+                  <li key={component.title}>
+                    <Link href={component.href}>{component.title}</Link>
                   </li>
                 ))}
               </ul>
@@ -104,8 +96,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-/*
-
-
-*/

@@ -35,19 +35,8 @@ const nimi: NimiProps = {
       "Hakkımızda": "/hakkimizda", // you can remove this if you don't want an about page
       "İletişim": "/iletisim", // you can remove this if you don't want a contact page
     },
-    content: {
-      authors: "/posts/authors", // default is `/posts/authors`
-      categories: "/posts/categories", // default is `/posts/categories`
-      tags: "/posts/tags", // default is `/posts/tags`
-      pages: "/all", // default is `/all`
-    },
-    legal: {
-      privacy_policy: "/privacy-policy", // default is `/privacy-policy`
-      privacy_policy_text: "Privacy Policy", // default is `Privacy Policy`
-      terms_of_service: "/terms-of-service", // default is `/terms-of-service`
-      terms_of_service_text: "Terms of Service", // default is `Terms of Service`
-    },
     cta: "#", // Link to CTA
+
   },
 
   nav_menu: {
@@ -74,29 +63,30 @@ const nimi: NimiProps = {
     ],
   },
 
-  directory_menu: {
-    title: "Learn Fjord",
+  legal_menu: {
+    title: "Yasal Bilgiler",
     items: [
       {
-        title: "Documentation",
-        href: "#",
+        title: "Kvkk",
+        href: "/kvkk",
         description:
-          "Styles for headings, paragraphs, lists, and other inline elements.",
+          "Get in touch with us if you have any questions or feedback. We would love to hear from you.",
       },
       {
-        title: "Layout Components",
-        href: "#",
+        title: "Çerez Politikası",
+        href: "/cerez-politikasi",
         description:
-          "Components that help you lay out your content, like Main, Craft.Section, and Craft.Container.",
+          "Get in touch with us if you have any questions or feedback. We would love to hear from you.",
       },
       {
-        title: "Navigation",
-        href: "#",
+        title: "Sürdürülebilirlik",
+        href: "/surdurulebilirlik",
         description:
-          "A Navigation component that helps you build accessible navigation menus.",
+          "Get in touch with us if you have any questions or feedback. We would love to hear from you.",
       },
     ],
   },
+
 
   sectory_menu: {
     title: "Sektörlerimiz",
