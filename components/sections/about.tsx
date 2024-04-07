@@ -1,6 +1,6 @@
 import * as Craft from "@/components/craft/layout";
 import Image from "next/image";
-import about from "@/public/about.jpeg";
+import about from "@/public/about-hero.webp";
 import nimi from "@/nimi.config";
 
 const About = () => {
@@ -12,10 +12,12 @@ const About = () => {
             <Image
               className="h-full w-full object-cover object-center"
               src={about}
-              width={1920}
-              height={1080}
-              alt={nimi.site_name}
+              alt={nimi.company_name}
+              width={1080}
+              height={384}
+              //priority={true}
               placeholder="blur"
+              loading="lazy"
             />
           </div>
           <h1 className="text-3xl"> {nimi.site_name} </h1>

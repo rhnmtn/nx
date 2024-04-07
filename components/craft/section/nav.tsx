@@ -31,7 +31,7 @@ const Nav = ({ className, children, id }: NavProps) => {
         <Link className="hover:opacity-75 transition-all not-prose" href="/">
           <h1 className="text-primary-500  text-2xl md:text-4xl">
             <span className="font-extrabold ">nimi </span>
-            <span className=" font-extralight text-orange-600 "> group </span>
+            <span className=" font-extralight text-orange-600 "> tech </span>
           </h1>
           {
             //<Image src={nimi.logo} alt="Logo" width={100} height={64}></Image>

@@ -20,6 +20,7 @@ export default function Home() {
             }
             <SectorCard />
           </SecondaryHero>
+          <CTA />
         </Craft.Container>
       </Craft.Section>
    

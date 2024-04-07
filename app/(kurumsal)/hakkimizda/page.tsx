@@ -3,7 +3,7 @@ import * as Craft from "@/components/craft/layout";
 import About from "@/components/sections/about";
 import SecondaryHero from "@/components/sections/secondary-hero";
 //import CTA from "@/components/sections/cta";
-//import FAQ from "@/components/sections/faq";
+import FAQ from "@/components/sections/faq";
 import nimi from "@/nimi.config";
 
 const Page = () => {
@@ -14,6 +14,7 @@ const Page = () => {
       </SecondaryHero>
 
       <About />
+      <FAQ />
     </Craft.Main>
   );
 };

@@ -26,7 +26,7 @@ const Footer = () => {
               <h1 className="text-primary-500  text-2xl md:text-4xl">
                 <span className="font-extrabold ">nimi </span>
                 <span className=" font-extralight text-orange-600 ">
-                  group
+                  tech
                 </span>
               </h1>
             </Link>
@@ -49,8 +49,10 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 sm:gap-0">
-            <div className="flex flex-col gap-2">
+
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-0">
+
+          <div className="flex flex-col gap-2">
               <h4 className="text-muted-foreground">{nimi.site_name}</h4>
               <ul>
                 {Object.entries(nimi.menu.main).map(([key, href]) => (
@@ -62,10 +64,24 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
+
+            <div className="flex flex-col gap-2">
+              <h4 className="text-muted-foreground">{nimi.sectory_menu.title}</h4>
+              <ul>
+              {nimi.sectory_menu.items.map((component) => (
+                  <li key={component.id}>
+                    <Link href={component.href}>
+                    {component.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             <div className="flex flex-col gap-2">
               <h4 className="text-muted-foreground">Blog</h4>
               <ul>
-                {Object.entries(nimi.menu.content).map(([key, href]) => (
+                {Object.entries(nimi.menu.legal).map(([key, href]) => (
                   <li key={key}>
                     <Link href={href}>
                       {key.charAt(0).toUpperCase() + key.slice(1)}
@@ -75,6 +91,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+
           <p className="text-muted-foreground mt-4 text-sm ">
             Copyright © 2020-2024{" "}
             <a href="#">{nimi.site_name.replace(" ", "")}</a>. Tüm Hakları

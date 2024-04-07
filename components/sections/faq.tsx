@@ -1,67 +1,77 @@
-import * as Craft from '@/components/craft/layout';
-import { QuestionMarkCircledIcon, ArrowTopRightIcon } from '@radix-ui/react-icons';
+import * as Craft from "@/components/craft/layout";
 import {
-	Accordion,
-	AccordionContent,
-	AccordionItem,
-	AccordionTrigger
-} from '@/components/ui/accordion';
+  QuestionMarkCircledIcon,
+  ArrowTopRightIcon,
+} from "@radix-ui/react-icons";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const content: faqProps[] = [
-	{
-		question: 'What is the meaning of life?',
-		answer: '42 is the answer to life, the universe, and everything.',
-		link: '#'
-	},
-	{
-		question: 'Why is the sky blue?',
-		answer:
-			'The sky appears blue to the human eye as the short waves of blue light are scattered more than other colors because they travel in smaller, shorter, wave lengths.'
-	},
-	{
-		question: 'How does gravity work?',
-		answer:
-			'Gravity is the force by which a planet or other body draws objects toward its center. The force of gravity keeps all of the planets in orbit around the sun.'
-	},
-	{
-		question: 'What is the speed of light?',
-		answer: 'The speed of light in a vacuum is 299,792 kilometers per second.'
-	}
+  {
+    question: "Ne zaman kurulmuştur??",
+    answer: "14 Haziran 2021 tarihinde kurulmuştur.",
+
+  },
+  {
+    question: "Faaliyet gösterdiği sektörler hangileridir?",
+    answer:
+      "Turizm, Enerji ve İnşaat sektörlerinde faaliyet göstermektedir.",
+  },
+  {
+    question: "Turizm sektöründe ne iş yapıyor?",
+    answer:
+      "Turizm sektöründe, TÜRSAB bağlı seyahat acentesi olarak faaliyet gösteren NİMİ TURİZM SEYAHAT ACENTASI, A sınıfı üyelik belgesi olan 13504 belge numarasına sahiptir. Villaci.com ve HepsiRota, profesyonel villa kiralama hizmeti sunan web sitelerimizdir. Özel havuzlu villa veya yazlık kiralama ihtiyaçlarınızı karşılamak için bizimle iletişime geçebilirsiniz.",
+      link: "www.villaci.com",
+  },
+  {
+    question: "Enerji sektöründe ne iş yapıyorsunuz?",
+    answer: "Firmamız, lisanslı veya lisanssız güneş enerji santrali ve çatı üstü projelerini mevzuata uygun bir şekilde tasarlayarak; güvenli, maksimum verimli ve düşük maliyetli çözümler sunmaktadır. Uzman ekibimiz, anahtar teslim sistem kurulumu ve bakım-onarım hizmetleriyle müşterilerimize en iyi hizmeti sağlamayı hedeflemektedir.",
+  },
+  {
+    question: "İnşaat sektöründe ne iş yapıyorsunuz?",
+    answer: "Proje ve inşaat sektöründe, başlangıçtan sona kadar tüm evrelerinde koordinasyonu sağlayarak, farklı disiplinlerin bir araya gelerek uyumlu bir şekilde çalışmasını temin ederiz.",
+  },
 ];
 
 const FAQ = () => {
-	return (
-		<Craft.Section>
-			<Craft.Container>
-				<div className="flex flex-col not-prose gap-6">
-					<h3 className="text-4xl">Frequently Asked Questions</h3>
-					<h4 className="text-2xl font-thin opacity-70">
-						What if all your questions were answered? What would you do then?
-					</h4>
-					<div className="mt-6 md:mt-12 flex flex-col gap-6">
-						{content.map((item, index) => (
-							<Accordion key={index} type="single" collapsible>
-								<AccordionItem value={item.question}>
-									<AccordionTrigger>{item.question}</AccordionTrigger>
-									<AccordionContent>
-										{item.answer}{' '}
-										{item.link && (
-											<a
-												href={item.link}
-												className="opacity-60 mt-2 hover:opacity-100 transition-all flex items-center"
-											>
-												Learn more <ArrowTopRightIcon className="ml-1" />
-											</a>
-										)}
-									</AccordionContent>
-								</AccordionItem>
-							</Accordion>
-						))}
-					</div>
-				</div>
-			</Craft.Container>
-		</Craft.Section>
-	);
+  return (
+    <Craft.Section>
+      <Craft.Container>
+        <div className="flex flex-col not-prose gap-6">
+          <h3 className="text-4xl">SSS - Sıkça Sorulan Sorular</h3>
+          <h4 className="text-2xl font-thin opacity-70">
+          Aşağıda, şirketimiz hakkında sıkça sorulan soruların özeti bulunmaktadır. Soruların üzerine tıklayarak cevapları görüntüleyebilirsiniz.
+          </h4>
+          <div className="mt-6 md:mt-12 flex flex-col gap-6">
+            {content.map((item, index) => (
+              <Accordion key={index} type="single" collapsible>
+                <AccordionItem value={item.question}>
+                  <AccordionTrigger>{item.question}</AccordionTrigger>
+                  <AccordionContent>
+                    {item.answer}{" "}
+                    {item.link && (
+                      <a                      
+                        href={item.link}
+                        rel="noopener"
+                        target="_blank"
+                        className="opacity-60 mt-2 hover:opacity-100 transition-all flex items-center"
+                      >
+                        Siteyi Ziyaret Et <ArrowTopRightIcon className="ml-1" />
+                      </a>
+                    )}
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            ))}
+          </div>
+        </div>
+      </Craft.Container>
+    </Craft.Section>
+  );
 };
 
 export default FAQ;
