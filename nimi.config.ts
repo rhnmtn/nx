@@ -4,7 +4,7 @@ const nimi: NimiProps = {
   company_province: "Fethiye",
   company_district: "Muğla",
 
-  site_name: "Nimi Tech", // site name: used in the header and footer
+  site_name: "Nimi Girişim", // site name: used in the header and footer
   site_domain: "https://www.nimi.com.tr", // site domain: used in the sitemap
   site_title: "Nimi.com.tr | Solar, Turizm, Villa Kiralama, İnşaat",
   site_description:

@@ -22,8 +22,8 @@ const Footer = () => {
           <div className="grid gap-1">
             <Link href="/">
               <h1 className="text-primary-500  text-2xl md:text-4xl">
-                <span className="font-extrabold ">nimi </span>
-                <span className=" font-extralight text-orange-600 ">tech</span>
+                <span className="font-extrabold ">Nimi </span>
+                <span className=" font-extralight text-orange-400 ">Girişim</span>
               </h1>
             </Link>
             <p>

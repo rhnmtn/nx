@@ -65,9 +65,9 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      new URL("/favicon.ico", "https://nimi.com.tr"),
-      { url: "/icon-dark.png", media: "(prefers-color-scheme: dark)" },
+      { url: "/favicon.svg" },
+      new URL("/favicon.svg", "https://nimi.com.tr"),
+      { url: "/favicon.svg", media: "(prefers-color-scheme: dark)" },
     ],
     shortcut: ["/shortcut-icon.png"],
     apple: [

@@ -11,6 +11,7 @@ import { Button } from "../../ui/button";
 import { NavMenu } from "./nav-menu";
 import { MobileNav } from "./mobile-nav";
 import { ModeToggle } from "../theme/theme-toggle";
+import Logo from "@/components/global/logo";
 
 const Nav = ({ className, children, id }: NavProps) => {
   return (
@@ -27,11 +28,14 @@ const Nav = ({ className, children, id }: NavProps) => {
         className="max-w-5xl mx-auto py-4 px-6 sm:px-8 flex justify-between items-center"
       >
         <Link className="hover:opacity-75 transition-all not-prose" href="/">
+        {
+          /*
           <h1 className="text-primary-500  text-2xl md:text-4xl">
             <span className="font-extrabold ">nimi </span>
-            <span className=" font-extralight text-orange-600 "> tech </span>
+            <span className=" font-extralight text-orange-600 "> girişimcilik </span>
           </h1>
-          {
+     */
+            <Logo/>
             //<Image src={nimi.logo} alt="Logo" width={100} height={64}></Image>
           }
         </Link>
